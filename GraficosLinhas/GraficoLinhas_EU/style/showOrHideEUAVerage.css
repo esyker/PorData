@@ -1,0 +1,11 @@
+/* Button */
+#showOrHideEuAverage {
+    background-color: rgb(214, 64, 18);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 65%;
+    border-radius: 12px;
+  }

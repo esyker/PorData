@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Boilerplate for Laboratory Exercises" />
+    <meta name="author" content="Faculty" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Boilerplate</title>
+
+    <!-- Import libraries. -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="libs/d3.js"
+    ></script>
+    
+
+
+    <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+  </script> 
+
+
+  <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     -->
+    <!-- JS -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="scripts/behavior.js"
+    ></script>
+
+    
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="flag-icon-css-master/css/flag-icon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700"/>
+
+    
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">  
+
+    
+  </head>
+
+  <body onload="init()">
+    <br />
+    <br />
+
+
+    <div class="grid-container">
+      <div id = "scatterPlot" class="grid-child purple"></div>
+      <div id="wrapper" class="grid-child green">
+        <div class="card-drop">
+          <a class='toggle' href="#">
+            <i class='icon'></i> 
+            <span class='label-active'>Selecione Um País</span>
+          </a>
+          <ul>
+            <li>
+              <a data-label="Alemanha" href="#"><i class="flag-icon flag-icon-de"></i>Alemanha</a>
+            </li>
+            <li>
+              <a data-label="Áustria" href="#"><i class="flag-icon flag-icon-at"></i>Áustria</a>
+            </li>
+            <li >
+              <a data-label="Bélgica" href="#"><i class="flag-icon flag-icon-be"></i>Bélgica</a>
+            </li>
+            <li>
+              <a data-label="Bulgária" href="#"><i class="flag-icon flag-icon-bg"></i>Bulgária</a>
+            </li>
+            <li>
+              <a data-label="Chipre" href="#"><i class="flag-icon flag-icon-cy"></i>Chipre</a>
+            </li>
+            <li>
+              <a data-label="Croácia" href="#"><i class="flag-icon flag-icon-hr"></i>Croácia</a>
+            </li>
+            <li>
+              <a data-label="Dinamarca" href="#"><i class="flag-icon flag-icon-dk"></i>Dinamarca</a>
+            </li>
+            <li>
+              <a data-label="Eslováquia" href="#"><i class="flag-icon flag-icon-sk"></i>Eslováquia</a>
+            </li>
+            <li>
+              <a data-label="Eslovénia" href="#"><i class="flag-icon flag-icon-si"></i>Eslovénia</a>
+            </li>
+            <li>
+              <a data-label="Espanha" href="#"><i class="flag-icon flag-icon-es"></i>Espanha</a>
+            </li>
+            <li>
+              <a data-label="Estónia" href="#"><i class="flag-icon flag-icon-ee"></i>Estónia</a>
+            </li>
+            <li>
+              <a data-label="Finlândia" href="#"><i class="flag-icon flag-icon-fi"></i>Finlândia</a>
+            </li>
+            <li>
+              <a data-label="França" href="#"><i class="flag-icon flag-icon-fr"></i>França</a>
+            </li>
+            <li>
+              <a data-label="Grécia" href="#"><i class="flag-icon flag-icon-gr"></i>Grécia</a>
+            </li>
+            <li>
+              <a data-label="Hungria" href="#"><i class="flag-icon flag-icon-hu"></i>Hungria</a>
+            </li>
+            <li>
+              <a data-label="Irlanda" href="#"><i class="flag-icon flag-icon-ie"></i>Irlanda</a>
+            </li>
+            <li>
+              <a data-label="Itália" href="#"><i class="flag-icon flag-icon-it"></i>Itália</a>
+            </li>
+            <li>
+              <a data-label="Letónia" href="#"><i class="flag-icon flag-icon-lv"></i>Letónia</a>
+            </li>
+            <li>
+              <a data-label="Lituânia" href="#"><i class="flag-icon flag-icon-lt"></i>Lituânia</a>
+            </li>
+            <li>
+              <a data-label="Luxemburgo" href="#"><i class="flag-icon flag-icon-lu"></i>Luxemburgo</a>
+            </li>
+            <li>
+              <a data-label="Malta" href="#"><i class="flag-icon flag-icon-mt"></i>Malta</a>
+            </li>
+            <li>
+              <a data-label="Países Baixos" href="#"><i class="flag-icon flag-icon-nl"></i>Países Baixos</a>
+            </li>
+            <li>
+              <a data-label="Polónia" href="#"><i class="flag-icon flag-icon-pl"></i>Polónia</a>
+            </li>
+            <li>
+              <a data-label="Portugal" href="#"><i class="flag-icon flag-icon-pt"></i>Portugal</a>
+            </li>
+            <li>
+              <a data-label="República Checa" href="#"><i class="flag-icon flag-icon-cz"></i>República Checa</a>
+            </li>
+            <li>
+              <a data-label="Roménia" href="#"><i class="flag-icon flag-icon-ro"></i>Roménia</a>
+            </li>
+            <li>
+              <a data-label="Suécia" href="#"><i class="flag-icon flag-icon-se"></i>Suécia</a>
+            </li>
+          </ul>
+        </div>
+      </div>    
+  </div>
+</body>
+</html>

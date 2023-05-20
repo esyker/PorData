@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>d3-line-chunked examples</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="d3.v4.min.js"></script>
+    <script src="d3-interpolate-path.js"></script>
+    <script src="d3-line-chunked.js"></script>
+    <script src="shared.js"></script>
+  </head>
+  <body>
+<div>
+  <div>
+    <button class="data2">Fewer Points</button>
+    <button class="data3">More Points</button>
+    <button class="reset">Reset</button>
+  </div>
+  <svg width="520" height="120">
+    <g transform="translate(10 10)">
+      <g class="circles" transform="translate(0 -6)"></g>
+      <path id="segments-line" style="clip-path: url(#path-segments)" />
+      <path id="gap-line" />
+      <defs>
+        <clipPath id="path-segments">
+        </clipPath>
+      </defs>
+    </g>
+  </svg>
+</div>
+<script>
+var defined = function (d) { return d[1] !== null; };
+var line = d3.line();
+
+var data1 = [[0, 80], [50, 20], [100, 50], [150, 30], [200, 40],
+  [250, 90], [300, null], [350, null], [400, 20], [450, 70], [500, 60]];
+
+var data2 = [[0, 30], [50, 50], [100, null], [150, 40], [200, null],
+  [250, 40], [350, 100], [400, null], [450, 20], [500, 90]];
+
+var data3 = [[0, 30], [25, 80], [50, 50], [75, 60], [100, 40], [150, 40],
+  [200, 15], [250, 40], [300, 60], [350, 100], [400, 60], [420, null],
+  [450, null], [475, 50], [500, 90]];
+
+
+/*d3.select('.data2').on('click', function () { play(data2); });
+d3.select('.data3').on('click', function () { play(data3); });
+d3.select('.reset').on('click', function () { play(data1); });*/
+init();
+
+
+function init() {
+  var data = data1;
+  var filteredData = data.filter(defined);
+  var segments = computeSegments(data, defined);
+
+  d3.select('#segments-line').attr('d', line(filteredData))
+  d3.select('#gap-line').attr('d', line(filteredData))
+
+  // initialize the clipping rectangles
+  // d[0] is the first data point in the segment
+  // d[d.length - 1] is the last data point in the segment
+  d3.select('#path-segments').selectAll('rect').data(segments)
+    .enter()
+    .append('rect')
+      .attr('x', function (d) { return d[0][0]; })
+      .attr('width', function (d) { return d[d.length - 1][0] - d[0][0]; })
+      .attr('y', 0)
+      .attr('height', 100);
+
+  //drawCircles(data1);
+}
+
+
+
+/*function play(data) {
+  var filteredData = data.filter(defined);
+  var segments = computeSegments(data, defined);
+  var transition = d3.transition().duration(1000);
+
+  d3.select('#segments-line')
+    .transition(transition)
+    .attrTween('d', function (d) {
+      var previous = d3.select(this).attr('d');
+      var current = line(filteredData);
+      return d3.interpolatePath(previous, current);
+    });
+
+  d3.select('#gap-line')
+    .transition(transition)
+    .attrTween('d', function (d) {
+      var previous = d3.select(this).attr('d');
+      var current = line(filteredData);
+      return d3.interpolatePath(previous, current);
+    });
+
+  // initialize the clipping rectangles
+  // d[0] is the first data point in the segment
+  // d[d.length - 1] is the last data point in the segment
+  var rectBinding = d3.select('#path-segments').selectAll('rect').data(segments);
+
+  var rectEntering = rectBinding.enter()
+    .append('rect')
+      .attr('x', function (d) { return d[0][0]; })
+      .attr('width', 0)
+      .attr('y', 0)
+      .attr('height', 100);
+
+
+  rectBinding.merge(rectEntering)
+    .transition(transition)
+    .attr('x', function (d) { return d[0][0]; })
+    .attr('width', function (d) { return d[d.length - 1][0] - d[0][0]; });
+
+  rectBinding.exit()
+    .transition(transition)
+    .attr('width', 0)
+    .remove();
+
+  drawCircles(data, transition);
+}*/
+</script>
+</body>
+</html>

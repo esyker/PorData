@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Boilerplate for Laboratory Exercises" />
+    <meta name="author" content="Faculty" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Boilerplate</title>
+
+    <!-- Import libraries. -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="libs/d3.js"
+    ></script>
+    
+
+
+    <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+  </script> 
+
+    <!-- JS -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="scripts/behavior.js"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/ods-dropdown.css" />
+    <link rel="stylesheet" href="style/country-dropdown.css" />
+    <link rel="stylesheet" href="style/linechart.css" />
+    <link rel="stylesheet" href="flag-icon-css-master/css/flag-icon.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700"/>    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body onload="init()">
+    <div class="containerPICKODS">
+      <div class="dropdown">
+        <button id = "dropdownTextODS" onclick="odsDropDownToogle()" class="dropbtn">  &#10095 Selecionar ODS</button>
+        <div id="myDropdownODS" class="dropdown-content">
+  
+          <button class="ODS1" onclick="dataODSChange('1')">
+            <img src="ODS_Icons/ods1_Main_PT.svg"
+            width="80" height="80">  Erradicar a Pobreza</button>
+          
+          <button class="ODS2 " onclick="dataODSChange('2')">
+            <img src="ODS_Icons/ods2_Main_PT.svg"
+            width="80" height="80">  Erradicar a Fome</button>
+          
+          <button class="ODS3" onclick="dataODSChange('3')">
+            <img src="ODS_Icons/ods3_Main_PT.svg"
+            width="80" height="80">  Saúde de Qualidade</button>
+  
+          <button class="ODS4" onclick="dataODSChange('4')">
+            <img src="ODS_Icons/ods4_Main_PT.svg"
+            width="80" height="80">  Educação de Qualidade</button>
+  
+          <button class="ODS5" onclick="dataODSChange('5')">
+            <img src="ODS_Icons/ods5_Main_PT.svg"
+            width="80" height="80">  Igualdade de Género</button>
+  
+          <button class="ODS6" onclick="dataODSChange('6')">
+            <img src="ODS_Icons/ods6_Main_PT.svg"
+            width="80" height="80">  Água Potável e Saneamento</button>
+  
+          <button class="ODS7" onclick="dataODSChange('7')">
+            <img src="ODS_Icons/ods7_Main_PT.svg"
+            width="80" height="80">  Energias Renováveis e Acessíveis</button>
+  
+          <button class="ODS8" onclick="dataODSChange('8')">
+            <img src="ODS_Icons/ods8_Main_PT.svg"
+            width="80" height="80">  Trabalho Digno e Crescimento Económico</button>
+  
+          <button class="ODS9" onclick="dataODSChange('9')">
+            <img src="ODS_Icons/ods9_Main_PT.svg"
+            width="80" height="80">  Indústria Inovação e Infraestruturas</button>
+  
+          <button class="ODS10" onclick="dataODSChange('10')">
+            <img src="ODS_Icons/ods10_Main_PT.svg"
+            width="80" height="80">  Reduzir as Desigualdades</button>
+  
+          <button class="ODS11" onclick="dataODSChange('11')">
+            <img src="ODS_Icons/ods11_Main_PT.svg"
+            width="80" height="80">  Cidades e Comunidades Sustentáveis</button>
+  
+          <button class="ODS12" onclick="dataODSChange('12')">
+            <img src="ODS_Icons/ods12_Main_PT.svg"
+            width="80" height="80">  Produção e Consumo Sustentáveis</button>
+  
+          <button class="ODS13" onclick="dataODSChange('13')">
+            <img src="ODS_Icons/ods13_Main_PT.svg"
+            width="80" height="80">  Ação Climática</button>
+  
+          <button class="ODS14" onclick="dataODSChange('14')">
+            <img src="ODS_Icons/ods14_Main_PT.svg"
+            width="80" height="80">  Proteger a Vida Marinha</button>
+  
+          <button class="ODS15" onclick="dataODSChange('15')">
+            <img src="ODS_Icons/ods15_Main_PT.svg"
+            width="80" height="80">  Proteger a Vida Terrestre</button>
+  
+          <button class="ODS16" onclick="dataODSChange('16')">
+            <img src="ODS_Icons/ods16_Main_PT.svg"
+            width="80" height="80">  Paz, Justiça e Instituições Eficazes</button>
+  
+          <button class="ODS17" onclick="dataODSChange('17')">
+            <img src="ODS_Icons/ods17_Main_PT.svg"
+            width="80" height="80">  Parcerias para a Implementação dos Objetivos</button>
+  
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="grid-container">
+      <div id = "lineCharts" class="grid-child purple"></div>  
+
+      <div id="wrapper" class="grid-child green">
+        <div class="card-drop">
+          <a class='toggle' href="#">
+            <i class='icon'></i> 
+            <span class='label-active'>Selecione Um País</span>
+          </a>
+          <ul>
+            <li><a data-label="Alemanha" href="#"><i class="flag-icon flag-icon-de"></i>Alemanha</a></li>
+            <li><a data-label="Áustria" href="#"><i class="flag-icon flag-icon-at"></i>Áustria</a></li>
+            <li ><a data-label="Bélgica" href="#"><i class="flag-icon flag-icon-be"></i>Bélgica</a></li>
+            <li><a data-label="Bulgária" href="#"><i class="flag-icon flag-icon-bg"></i>Bulgária</a></li>
+            <li><a data-label="Chipre" href="#"><i class="flag-icon flag-icon-cy"></i>Chipre</a></li>
+            <li><a data-label="Croácia" href="#"><i class="flag-icon flag-icon-hr"></i>Croácia</a></li>
+            <li><a data-label="Dinamarca" href="#"><i class="flag-icon flag-icon-dk"></i>Dinamarca</a></li>
+            <li><a data-label="Eslováquia" href="#"><i class="flag-icon flag-icon-sk"></i>Eslováquia</a></li>
+            <li><a data-label="Eslovénia" href="#"><i class="flag-icon flag-icon-si"></i>Eslovénia</a></li>
+            <li><a data-label="Espanha" href="#"><i class="flag-icon flag-icon-es"></i>Espanha</a></li>
+            <li><a data-label="Estónia" href="#"><i class="flag-icon flag-icon-ee"></i>Estónia</a></li>
+            <li><a data-label="Finlândia" href="#"><i class="flag-icon flag-icon-fi"></i>Finlândia</a></li>
+            <li><a data-label="França" href="#"><i class="flag-icon flag-icon-fr"></i>França</a></li>
+            <li><a data-label="Grécia" href="#"><i class="flag-icon flag-icon-gr"></i>Grécia</a></li>
+            <li><a data-label="Hungria" href="#"><i class="flag-icon flag-icon-hu"></i>Hungria</a></li>
+            <li><a data-label="Irlanda" href="#"><i class="flag-icon flag-icon-ie"></i>Irlanda</a></li>
+            <li><a data-label="Itália" href="#"><i class="flag-icon flag-icon-it"></i>Itália</a></li>
+            <li><a data-label="Letónia" href="#"><i class="flag-icon flag-icon-lv"></i>Letónia</a></li>
+            <li><a data-label="Lituânia" href="#"><i class="flag-icon flag-icon-lt"></i>Lituânia</a></li>
+            <li><a data-label="Luxemburgo" href="#"><i class="flag-icon flag-icon-lu"></i>Luxemburgo</a></li>
+            <li><a data-label="Malta" href="#"><i class="flag-icon flag-icon-mt"></i>Malta</a></li>
+            <li><a data-label="Países Baixos" href="#"><i class="flag-icon flag-icon-nl"></i>Países Baixos</a></li>
+            <li><a data-label="Polónia" href="#"><i class="flag-icon flag-icon-pl"></i>Polónia</a></li>
+            <li><a data-label="Portugal" href="#"><i class="flag-icon flag-icon-pt"></i>Portugal</a></li>
+            <li><a data-label="República Checa" href="#"><i class="flag-icon flag-icon-cz"></i>República Checa</a></li>
+            <li><a data-label="Roménia" href="#"><i class="flag-icon flag-icon-ro"></i>Roménia</a></li>
+            <li><a data-label="Suécia" href="#"><i class="flag-icon flag-icon-se"></i>Suécia</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+      
+    
+  </div>
+  </body>
+</html>

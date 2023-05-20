@@ -1,0 +1,173 @@
+
+
+
+.containerPICKODS{
+  background-image: url("pattern1.jpg");
+  background-size:cover;
+  background-position: center;
+  height: 100%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(36, 36, 36);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width:100%;
+  border-radius: 20px;
+  margin:10px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(1,1,1,1);
+  outline: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:30%;
+  margin-left:35%;
+}
+
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-family:Verdana;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 300px;
+  overflow-y:scroll;
+  border-radius: 30px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.active, .dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+.dropdown-content button {
+  background-color: #464747; /* Green background */
+  border: 1px solid rgb(36, 36, 36); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.dropdown-content button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.dropdown-content button:hover {
+  background-color:rgb(77, 77, 77);
+  box-shadow: 10px 10px 10px 10px rgba(1,1,1,1);
+}
+
+
+
+.dropdown-content .ODS1{
+  background-color:#e5243b;
+  text-align: left;
+}
+.dropdown-content .ODS2{
+  background-color:#DDA63A;
+  text-align: left;
+}
+.dropdown-content .ODS3{
+  background-color:#4C9F38;
+  text-align: left;
+}
+.dropdown-content .ODS4{
+  background-color:#C5192D;
+  text-align: left;
+}
+.dropdown-content .ODS5{
+  background-color:#FF3A21;
+  text-align: left;
+}
+.dropdown-content .ODS6{
+  background-color:#26BDE2;
+  text-align: left;
+}
+.dropdown-content .ODS7{
+  background-color:#FCC30B;
+  text-align: left;
+}
+.dropdown-content .ODS8{
+  background-color:#A21942;
+  text-align: left;
+}
+.dropdown-content .ODS9{
+  background-color:#FD6925;
+  text-align: left;
+}
+.dropdown-content .ODS10{
+  background-color:#DD1367;
+  text-align: left;
+}
+.dropdown-content .ODS11{
+  background-color:#FD9D24;
+  text-align: left;
+}
+.dropdown-content .ODS12{
+  background-color:#BF8B2E;
+  text-align: left;
+}
+.dropdown-content .ODS13{
+  background-color:#3F7E44;
+  text-align: left;
+}
+.dropdown-content .ODS14{
+  background-color:#0A97D9;
+  text-align: left;
+}
+.dropdown-content .ODS15{
+  background-color:#56C02B;
+  text-align: left;
+}
+.dropdown-content .ODS16{
+  background-color:#00689D;
+  text-align: left;
+}
+.dropdown-content .ODS17{
+  background-color:#19486A;
+  text-align: left;
+}

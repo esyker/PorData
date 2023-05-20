@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Boilerplate for Laboratory Exercises" />
+    <meta name="author" content="Faculty" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Boilerplate</title>
+
+    <!-- Import libraries. -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="https://d3js.org/d3.v6.js"
+    ></script>
+
+
+
+
+
+
+
+
+<!--     <script language="JavaScript" type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="scripts/ods8.js"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href=
+      "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+              integrity=
+      "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+              crossorigin="anonymous">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700"/>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+
+
+  </head>
+
+  <body onload="init()">
+
+
+  <div class="containerPICKODS">
+
+    <div class="dropdown">
+      <button id = "dropdownText" onclick="myFunction()" class="dropbtn">  &#10095 Selecionar ODS</button>
+      <div id="myDropdown" class="dropdown-content">
+
+
+
+        <form action="htmlODS1.html">
+          <button class="ODS1" type="submit">
+            <img src="ODS_Icons/ods1_Main_PT.svg"
+            width="90" height="90">  Erradicar a Pobreza</button>
+        </form>
+
+        
+        <form action="htmlODS2.html">
+        <button class="ODS2">
+            <img src="ODS_Icons/ods2_Main_PT.svg"
+            width="90" height="90">  Erradicar a Fome</button>
+        </form>
+        
+
+        <form action="htmlODS3.html">
+          <button class="ODS3">
+            <img src="ODS_Icons/ods3_Main_PT.svg"
+            width="90" height="90">  Saúde de Qualidade</button>
+        </form>
+
+        <form action="htmlODS4.html">
+          <button class="ODS4" type="submit">
+            <img src="ODS_Icons/ods4_Main_PT.svg"
+            width="90" height="90">  Educação de Qualidade</button>
+        </form>
+
+
+        <form action="htmlODS5.html">
+          <button class="ODS5" type="submit">
+            <img src="ODS_Icons/ods5_Main_PT.svg"
+            width="90" height="90">  Igualdade de Género</button>
+        </form>
+
+
+        <form action="htmlODS6.html">
+          <button class="ODS6" type="submit">
+            <img src="ODS_Icons/ods6_Main_PT.svg"
+            width="90" height="90">  Água Potável e Saneamento</button>
+        </form>
+
+
+        <form action="htmlODS7.html">
+          <button class="ODS7" type="submit">
+            <img src="ODS_Icons/ods7_Main_PT.svg"
+            width="90" height="90">  Energias Renováveis e Acessíveis</button>
+        </form>
+
+
+
+          <button class="ODS8" type="submit">
+            <img src="ODS_Icons/ods8_Main_PT.svg"
+            width="90" height="90">  Trabalho Digno e Crescimento Económico</button>
+
+
+        <form action="htmlODS9.html">
+          <button class="ODS9" type="submit">
+            <img src="ODS_Icons/ods9_Main_PT.svg"
+            width="90" height="90">  Indústria Inovação e Infraestruturas</button>
+        </form>
+
+        <form action="htmlODS10.html">
+          <button class="ODS10" type="submit">
+            <img src="ODS_Icons/ods10_Main_PT.svg"
+            width="90" height="90">  Reduzir as Desigualdades</button>
+        </form>
+
+        <form action="htmlODS11.html">
+          <button class="ODS11" type="submit">
+            <img src="ODS_Icons/ods11_Main_PT.svg"
+            width="90" height="90">  Cidades e Comunidades Sustentáveis</button>
+        </form>
+
+        <form action="htmlODS12.html">
+          <button class="ODS12" type="submit">
+            <img src="ODS_Icons/ods12_Main_PT.svg"
+            width="90" height="90">  Produção e Consume Sustentáveis</button>
+        </form>
+
+        <form action="htmlODS13.html">
+          <button class="ODS13" type="submit">
+            <img src="ODS_Icons/ods13_Main_PT.svg"
+            width="90" height="90">  Ação Climática</button>
+        </form>
+
+        <form action="htmlODS14.html">
+          <button class="ODS14" type="submit">
+            <img src="ODS_Icons/ods14_Main_PT.svg"
+            width="90" height="90">  Proteger a Vida Marinha</button>
+        </form>
+
+        <form action="htmlODS15.html">
+          <button class="ODS15" type="submit">
+            <img src="ODS_Icons/ods15_Main_PT.svg"
+            width="90" height="90">  Proteger a Vida Terrestre</button>
+        </form>
+
+        <form action="htmlODS16.html">
+          <button class="ODS16" type="submit">
+            <img src="ODS_Icons/ods16_Main_PT.svg"
+            width="90" height="90">  Paz, Justiça e Instituições Eficazes</button>
+        </form>
+
+        <form action="htmlODS17.html">
+          <button class="ODS17" type="submit">
+            <img src="ODS_Icons/ods17_Main_PT.svg"
+            width="90" height="90">  Parcerias para a Implementação dos Objetivos</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+    <div id = "containerODS8" class="containerODS8">
+      <img class="container__image" src="ODS_Icons/ods8_Main_PT.svg">
+      <div class="container__text">
+        <p>
+          O ODS 8 reconhece a importância de um crescimento económico sustentável e de elevados níveis de produtividade económica para a criação de empregos de qualidade bem remunerados, bem como para a eficiência na utilização dos recursos no consumo e na produção. Apela à criação de oportunidades de pleno emprego e de trabalho digno para todos, a par da erradicação do trabalho forçado, do tráfico de seres humanos e do trabalho infantil, bem como à promoção de direitos laborais e de ambientes de trabalho seguros.
+        </p>
+      </div>
+    </div>
+
+
+
+
+<div class= "all_plots">
+
+
+
+
+
+
+
+
+<div class="container1">
+  <div id="ODS_Info" class="fixed">
+
+
+    <div class="Pagination">
+      <div class="counter"></div>
+      <button id="Arrow_Left" class="paginate left"><i></i><i></i></button>
+      <button id="Arrow_Right" class="paginate right"><i></i><i></i></button>
+    </div>
+
+
+
+
+
+    <div class="containerSub_ODS">
+      <img id="imgSUB_ODS1_1" class="container__imageSub_ODS" src="ODS_Icons/Sub_ODS8_1.svg">
+      <img id="imgSUB_ODS1_2" class="container__imageSub_ODS" src="ODS_Icons/Sub_ODS8_2.svg">
+      <img id="imgSUB_ODS1_3" class="container__imageSub_ODS" src="ODS_Icons/Sub_ODS8_3.svg">
+      <img id="imgSUB_ODS1_4" class="container__imageSub_ODS" src="ODS_Icons/Sub_ODS8_4.svg">
+      <img id="imgSUB_ODS1_5" class="container__imageSub_ODS" src="ODS_Icons/Sub_ODS8_5.svg">
+      <img id="imgSUB_ODS1_6" class="container__imageSub_ODS" src="ODS_Icons/Sub_ODS8_6.svg">
+      <div class="container__textSub_ODS">
+
+
+        <div id="container__textSub_ODS_Title1"  class="container__textSub_ODS_Title">
+          PIB real <em>per capita</em> (Euro)
+        </div>
+        <div id="container__textSub_ODS_Text1" class="container__textSub_ODS_Text">
+          Que países fazem crescer mais e menos a riqueza criada por pessoa ao longo do tempo, descontando a inflação?
+        </div>
+
+        <div id="container__textSub_ODS_Title2"  class="container__textSub_ODS_Title">
+          Investimento: Formação bruta de capital fixo em % do PIB
+        </div>
+        <div id="container__textSub_ODS_Text2" class="container__textSub_ODS_Text">
+          Em que países há, em percentagem do PIB, mais e menos investimento, seja público, das empresas ou das famílias?
+        </div>
+
+        <div id="container__textSub_ODS_Title3"  class="container__textSub_ODS_Title">
+          Taxa de jovens não empregados que não estão em educação ou formação
+        </div>
+        <div id="container__textSub_ODS_Text3" class="container__textSub_ODS_Text">
+          Que países têm maior e menor percentagem de homens e de mulheres entre os 15 e os 29 anos que não trabalham nem estudam?
+        </div>
+
+
+
+        <div id="container__textSub_ODS_Title4"  class="container__textSub_ODS_Title">
+          Taxa de emprego: total e por sexo
+        </div>
+        <div id="container__textSub_ODS_Text4" class="container__textSub_ODS_Text">
+          Que países têm maior e menor percentagem de homens ou mulheres, entre os 20 e 64 anos, a trabalhar?
+        </div>
+
+
+        <div id="container__textSub_ODS_Title5"  class="container__textSub_ODS_Title">
+          Taxa de desemprego de longa duração
+        </div>
+        <div id="container__textSub_ODS_Text5" class="container__textSub_ODS_Text">
+          Que países têm maior e menor percentagem de homens ou mulheres desempregados há um ano ou mais?
+        </div>
+
+
+        <div id="container__textSub_ODS_Title6"  class="container__textSub_ODS_Title">
+          Acidentes de trabalho mortais por 100 mil empregados: total e por sexo
+        </div>
+        <div id="container__textSub_ODS_Text6"  class="container__textSub_ODS_Text">
+          Em que países há mais ou menos homens e mulheres a morrer na sequência de acidentes de trabalho, por 100 mil trabalhadores?
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="PlotParts" class="flex-item">
+
+    
+
+
+  <div id="select_menu1">
+      <select id="my_select">
+          <option id = "opc_2020" value="2020">2020</option>
+          <option id = "opc_2019" value="2019" selected>2019</option>
+          <option id = "opc_2018"value="2018">2018</option>
+          <option id = "opc_2017"value="2017">2017</option>
+          <option id = "opc_2016"value="2016">2016</option>
+          <option id = "opc_2015"value="2015">2015</option>
+          <option id = "opc_2014"value="2014">2014</option>
+          <option id = "opc_2013"value="2013">2013</option>
+          <option id = "opc_2012"value="2012">2012</option>
+          <option id = "opc_2011"value="2011">2011</option>
+          <option id = "opc_2010"value="2010">2010</option>
+      </select>
+  </div>
+    
+
+    <div id="my_dataviz1" class="cycle-hide"></div>
+    <div id="my_dataviz2" class="cycle-hide"></div>
+    <div id="my_dataviz3" class="cycle-hide"></div>
+    <div id="my_dataviz4" class="cycle-hide"></div>
+    <div id="my_dataviz5" class="cycle-hide"></div>
+    <div id="my_dataviz6" class="cycle-hide"></div>
+    <div id="ref_and_data_update">
+      Fontes: Eurostat | Entidades Nacionais, PORDATA
+      <br>
+      Última actualização: 2021-01-16
+    </div>
+      
+    </div>
+
+  </div>
+</div>
+
+</div>
+    
+      
+  </body>
+</html>

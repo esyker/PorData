@@ -1,0 +1,90 @@
+#lineCharts {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .lineChart{
+    margin-left: 3em;
+    margin-bottom: 1em;
+  }
+  
+  /*.lineChart svg 
+  { background-color: rgb(235, 253, 255); }*/
+  
+  /*.lineChart .line{
+    background-color: red;
+  }*/
+  
+  .lineChart .background
+  {
+    fill: rgb(235, 253, 255);
+  }
+  
+  .lineChart .overlay {
+    fill: none;
+    pointer-events: fill;
+  }
+  
+  .lineChart .focus circle {
+    fill: red;
+  }
+  
+  .lineChart .focus text {
+    font-size: 9px;
+  }
+  
+  .lineChart .tooltip {
+    fill: white;
+    stroke: #000;
+  }
+  
+  .lineChart .tooltip-date, .tooltip-measure {
+    font-weight: bold;
+  }
+  
+  .lineChart .lineChartTitle
+  {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .lineChart .lineChartDescription
+  {
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(160, 160, 160);
+  }
+  
+  .lineChart .lineChartFont
+  {
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(160, 160, 160);
+  }
+  
+  .lineXAxis
+  {
+    color: green;
+  }
+  
+  .lineYAxis
+  {
+    color: green;
+  }
+
+  div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 400px;					
+    height: auto;					
+    padding: 5px;				
+    font: 16px sans-serif;		
+    background: transparent;	
+    border: 0px;		
+    border-radius: 3px;			
+    pointer-events: none;
+    color:#fff;
+    font-family:"verdana";
+  }

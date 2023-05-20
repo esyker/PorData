@@ -1,0 +1,709 @@
+div {
+  width: 100%;
+  text-align: center;
+  min-height: auto;
+}
+
+.axisGray line{
+  stroke: #424242;
+}
+
+.axisGray path{
+  stroke: #424242;
+}
+
+.axisGray text{
+  fill: #424242;
+}
+
+
+
+/* Quando quero chamar um elemento, faço .nome_classe (no entanto todos com essa classe são chamados)
+   Ou então faço #id_name */
+
+
+
+
+.container1 {
+  background-color:#ffffff;
+  display:flex;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #ffffff;
+  padding :0%;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.fixed {
+  background-color:#ffffff;
+  width: 30%;
+  border-style: groove;
+  border-color: transparent;
+}
+.flex-item {
+  background-color:#ffffff;
+  flex-grow: 1;
+  margin-left: 50px;
+  border-style: groove;
+  border-color: #ddd;;
+}
+
+
+
+
+
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: auto;					
+  height: auto;					
+  padding: 5px;				
+  font: 14px sans-serif;		
+  background: #e5243b;
+  color: white;
+  border: 0px;		
+  border-radius: 4px;			
+  pointer-events: none;			
+}
+
+
+
+
+body {
+  height: 100%;
+  background-color:#f7f7f7;
+  display: grid;
+  place-content: space-evenly;
+  place-items: center;
+  gap: 1%;
+  /* padding: 5%; */
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding-top: 2em;
+    gap: 8%;
+  }
+}
+
+
+
+
+
+html
+{
+	padding-top: 1em;
+	font-family: Calibri, sans-serif;
+  font-size: 30px;
+}
+
+
+
+
+.containerODS1,  .containerODS2, .containerODS3, .containerODS4, .containerODS5,
+.containerODS6, .containerODS7, .containerODS8, .containerODS9, .containerODS10,
+.containerODS11 ,.containerODS12 ,.containerODS13 ,.containerODS14, .containerODS15,
+.containerODS16, .containerODS17{
+  padding: 20px 0px 0px 0px;
+  width: 90%;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 1%;
+}
+
+.containerODS1{
+  background-color:#e5243b;
+}
+.containerODS2{
+  background-color:#DDA63A;
+}
+.containerODS3{
+  background-color:#4C9F38;
+}
+.containerODS4{
+  background-color:#C5192D;
+}
+.containerODS5{
+  background-color:#FF3A21;
+}
+.containerODS6{
+  background-color:#26BDE2;
+}
+.containerODS7{
+  background-color:#FCC30B;
+}
+.containerODS8{
+  background-color:#A21942;
+}
+.containerODS9{
+  background-color:#FD6925;
+}
+.containerODS10{
+  background-color:#DD1367;
+}
+.containerODS11{
+  background-color:#FD9D24;
+}
+.containerODS12{
+  background-color:#BF8B2E;
+}
+.containerODS13{
+  background-color:#3F7E44;
+}
+.containerODS14{
+  background-color:#0A97D9;
+}
+.containerODS15{
+  background-color:#56C02B;
+}
+.containerODS16{
+  background-color:#00689D;
+}
+.containerODS17{
+  background-color:#19486A;
+}
+
+
+
+.container__image {
+  margin: 20px 30px 0 0;
+  width: 200px;
+  margin-left: 5%;
+  object-fit: contain;
+}
+.container__text {
+  flex: 1 1 auto;
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 20%;
+  font-size: 20px;
+  margin-top:3%;
+  margin-right: 10%;
+}
+
+
+
+
+
+.containerPICKODS{
+  background-image: url("pattern1.jpg");
+  background-size:cover;
+  background-position: center;
+  height: 100%;
+  width:90%;
+}
+
+
+
+.containerSub_ODS{
+  height: auto;
+  margin-top:10%;
+}
+
+
+
+.container__imageSub_ODS{
+  width: 45%;
+  height:auto;
+}
+
+.container__textSub_ODS_Title{
+  font-weight: bold;
+  font-size:28px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width:auto;
+}
+
+.container__textSub_ODS_Text{
+  font-size:18px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+
+#imgSUB_ODS1_2, #imgSUB_ODS1_3, #imgSUB_ODS1_4, #imgSUB_ODS1_5, #imgSUB_ODS1_6,#imgSUB_ODS1_7,#imgSUB_ODS1_8{
+  display:none;
+}
+
+
+
+#imgSUB_ODS1_1, #imgSUB_ODS1_2, #imgSUB_ODS1_3, #imgSUB_ODS1_4, #imgSUB_ODS1_5, #imgSUB_ODS1_6,#imgSUB_ODS1_7,#imgSUB_ODS1_8 {
+  position: relative;
+  
+/*   -webkit-animation: slide1 0.5s forwards;
+  -webkit-animation-delay: 2s; */
+  animation: fadeIn 3s;
+  animation-delay: 0s;
+}
+
+.container__textSub_ODS_Title, .container__textSub_ODS_Text{
+  position: relative;
+  /*   -webkit-animation: slide1 0.5s forwards;
+  -webkit-animation-delay: 2s; */
+  animation: fadeIn 3s;
+  animation-delay: 0s;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+
+@-webkit-keyframes slide1 {
+  100% { right: 0; }
+}
+
+@keyframes slide1 {
+  100% { right: 0; }
+}
+
+@-webkit-keyframes slide2 {
+  100% { bottom: 0; }
+}
+
+@keyframes slide2 {
+  100% { bottom: 0; }
+}
+
+
+
+
+#container__textSub_ODS_Title2{
+  display:none;
+}
+
+#container__textSub_ODS_Text2{
+  display:none;
+}
+
+
+#container__textSub_ODS_Title3{
+  display:none;
+}
+
+#container__textSub_ODS_Text3{
+  display:none;
+}
+
+#container__textSub_ODS_Title4{
+  display:none;
+}
+
+#container__textSub_ODS_Text4{
+  display:none;
+}
+
+#container__textSub_ODS_Title5{
+  display:none;
+}
+
+#container__textSub_ODS_Text5{
+  display:none;
+}
+
+#container__textSub_ODS_Title6{
+  display:none;
+}
+
+#container__textSub_ODS_Text6{
+  display:none;
+}
+
+#container__textSub_ODS_Title7{
+  display:none;
+}
+
+#container__textSub_ODS_Text7{
+  display:none;
+}
+
+#container__textSub_ODS_Title8{
+  display:none;
+}
+
+#container__textSub_ODS_Text8{
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  outline: 0;
+}
+
+#Arrow_Left{
+  background: none;
+  outline: transparent;
+  position: relative;
+}
+#Arrow_Right{
+  background: none;
+  outline: transparent;
+  position: relative;
+}
+
+
+
+.counter {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+/*   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); */
+  color: rgb(82, 82, 82);
+  transform: translateY(125%);
+  animation: fadeIn 3s;
+}
+
+.paginate {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  animation: fadeIn 3s;
+}
+.paginate i {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #e5243b;
+  transition: all 0.15s ease;
+}
+
+.paginate.left {
+  right: 10%;
+}
+.paginate.left i {
+  transform-origin: 0% 50%;
+}
+.paginate.left i:first-child {
+  transform: translate(0, -1px) rotate(40deg);
+}
+.paginate.left i:last-child {
+  transform: translate(0, 1px) rotate(-40deg);
+}
+.paginate.left:hover i:first-child {
+  transform: translate(0, -1px) rotate(30deg);
+}
+.paginate.left:hover i:last-child {
+  transform: translate(0, 1px) rotate(-30deg);
+}
+
+
+.paginate.left:active i:first-child {
+  transform: translate(1px, -1px) rotate(25deg);
+}
+.paginate.left:active i:last-child {
+  transform: translate(1px, 1px) rotate(-25deg);
+}
+.paginate.left[data-state=disabled] i:first-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.left[data-state=disabled] i:last-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.left[data-state=disabled]:hover i:first-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.left[data-state=disabled]:hover i:last-child {
+  transform: translate(-5px, 0) rotate(0deg);
+}
+.paginate.right {
+  left: 10%;
+}
+.paginate.right i {
+  transform-origin: 100% 50%;
+}
+.paginate.right i:first-child {
+  transform: translate(0, 1px) rotate(40deg);
+}
+.paginate.right i:last-child {
+  transform: translate(0, -1px) rotate(-40deg);
+}
+.paginate.right:hover i:first-child {
+  transform: translate(0, 1px) rotate(30deg);
+}
+.paginate.right:hover i:last-child {
+  transform: translate(0, -1px) rotate(-30deg);
+}
+.paginate.right:active i:first-child {
+  transform: translate(1px, 1px) rotate(25deg);
+}
+.paginate.right:active i:last-child {
+  transform: translate(1px, -1px) rotate(-25deg);
+}
+.paginate.right[data-state=disabled] i:first-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate.right[data-state=disabled] i:last-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate.right[data-state=disabled]:hover i:first-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate.right[data-state=disabled]:hover i:last-child {
+  transform: translate(5px, 0) rotate(0deg);
+}
+.paginate[data-state=disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+
+
+
+
+
+.cycle-hide {
+  display: none;
+}
+
+.cycle-hide:nth-child(even) {
+  background: rgb(255, 255, 255);
+}
+
+.cycle-hide:nth-child(odd) {
+  background: rgb(255, 255, 255);
+}
+
+.active {
+  display: block;
+}
+
+
+
+
+#select_menu1{
+  width: 20%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+
+/* Combobox que permite escolher o ano do gráfico */
+select{
+  width: auto;
+
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* Tudo o que vem agora é sobre o Dropdown que permite mudar de ODS */
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(36, 36, 36);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width:100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(1,1,1,1);
+  outline: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:38%;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-family:Verdana;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 300px;
+  overflow-y:scroll;
+  border-radius: 30px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.active, .dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(78, 78, 78);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+.dropdown-content button {
+  background-color: #464747; /* Green background */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+
+
+
+.dropdown-content button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.dropdown-content button:hover {
+  background-color:rgb(77, 77, 77);
+  box-shadow: 10px 10px 10px 10px rgba(1,1,1,1);
+}
+
+
+
+.dropdown-content .ODS1{
+  background-color:#e5243b;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS2{
+  background-color:#DDA63A;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS3{
+  background-color:#4C9F38;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS4{
+  background-color:#C5192D;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS5{
+  background-color:#FF3A21;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS6{
+  background-color:#26BDE2;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS7{
+  background-color:#FCC30B;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS8{
+  background-color:#A21942;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS9{
+  background-color:#FD6925;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS10{
+  background-color:#DD1367;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS11{
+  background-color:#FD9D24;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS12{
+  background-color:#BF8B2E;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS13{
+  background-color:#3F7E44;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS14{
+  background-color:#0A97D9;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS15{
+  background-color:#56C02B;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS16{
+  background-color:#00689D;
+  text-align: left;
+  font-size: 14px;
+}
+.dropdown-content .ODS17{
+  background-color:#19486A;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+
+#ref_and_data_update{
+  font-size: 12px;
+}
+
+
